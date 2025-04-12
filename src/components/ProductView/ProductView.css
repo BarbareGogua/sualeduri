@@ -1,0 +1,230 @@
+.product-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+  }
+  
+  .company-name {
+    display: block;
+    color: #FF7E1B;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-title {
+    font-size: 2.8rem;
+    color: #1D2026;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+  }
+  
+  .product-description {
+    color: #69707D;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .product-price {
+    margin-bottom: 2rem;
+  }
+  
+  .current-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1D2026;
+    margin-right: 1rem;
+  }
+  
+  .discount {
+    background-color: #FFEEE2;
+    color: #FF7E1B;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .original-price {
+    display: block;
+    color: #B6BCC8;
+    font-weight: 700;
+    text-decoration: line-through;
+    font-size: 1rem;
+  }
+  
+  .product-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    background-color: #F7F8FD;
+    border-radius: 10px;
+    height: 56px;
+    padding: 0 1rem;
+  }
+  
+  .quantity-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        width: 40px; 
+        height: 40px; 
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+      }
+  
+  
+  .quantity-button img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+
+  .quantity-selector {
+    display: flex;
+    align-items: center; 
+    background-color: #F7F8FD;
+    border-radius: 10px;
+    height: 56px; 
+    padding: 0 1rem;
+  }
+
+  .quantity {
+    font-weight: 700;
+    color: #1D2026;
+    margin: 0 1.5rem;
+    min-width: 1rem;
+    text-align: center;
+  }
+  
+  .add-to-cart-button {
+    background-color: #FF7E1B;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #e1701a;
+  }
+  
+  .add-to-cart-button img {
+    width: 20px; 
+    height: 20px; 
+  }
+
+  @media (max-width: 767px) {
+    .product-view {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .product-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .product-description {
+      margin-bottom: 1.5rem;
+    }
+  
+    .product-price {
+      margin-bottom: 1.5rem;
+    }
+  
+    .product-actions {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .quantity-selector {
+      height: auto;
+      padding: 1rem;
+      display: flex; 
+      align-items: center; 
+      display: flex;
+      justify-content: center;
+    }
+  
+    .quantity-button {
+      padding: 0.75rem;
+      width: 40px; 
+      height: 40px; 
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .quantity-button img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; 
+    }
+  
+    .quantity {
+      margin: 0 1rem;
+      min-width: auto; 
+      text-align: center;
+    }
+  
+    .add-to-cart-button {
+      padding: 1rem;
+    }
+  }
+  .prev-button.mobile,
+  .next-button.mobile {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prev-button.mobile {
+    left: 1rem;
+  }
+
+  .next-button.mobile {
+    right: 1rem;
+  }
+
+  .prev-button.mobile {
+    left: 0.5rem; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+  
+  .next-button.mobile {
+    right: 0.5rem; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  .mobile-menu-open .prev-button.mobile,
+  .mobile-menu-open .next-button.mobile {
+    display: none;
+  }
+}
