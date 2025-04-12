@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header/Header.jsx'; 
-import ProductView from './components/ProductView/ProductView.jsx'; 
+import Header from './components/Header/Header'; 
+import ProductView from './components/ProductView/ProductView'; 
 import { CartProvider } from './context/CartContext.jsx';
 import './styles/global.css';
 

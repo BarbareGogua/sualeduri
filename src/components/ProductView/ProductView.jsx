@@ -19,14 +19,14 @@ const ProductView = ({ isMobile }) => {
     price: 125.00,
     originalPrice: 250.00,
     discount: 50,
-    thumbnail: "/images/image-product-1-thumbnail.jpg"
+    thumbnail: "/src/assets/images/image-product-1.jpg"
   };
 
   const productImages = [
-    "/assets/images/image-product-1.jpg",
-    "/assets/images/image-product-2.jpg",
-    "/assets/images/image-product-3.jpg",
-    "/assets/images/image-product-4.jpg"
+   "/src/assets/images/image-product-1.jpg",
+   "/src/assets/images/image-product-2.jpg",
+   "/src/assets/images/image-product-3.jpg",
+   "/src/assets/images/image-product-4.jpg"
   ];
   const decreaseQuantity = () => {
     if (quantity > 1) {
